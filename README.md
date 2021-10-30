@@ -91,3 +91,7 @@ Here is a quick dry run of Bubble Sort Algorithm. In a nutshell it compares pair
 -
 - */
 ```
+
+Look at the NumebrsCollection, CharacterCollection and LinkedList classes for how sorting is implemented. We could make use of an interface Sortable and create a Sorter class that implements the actual sorting logic if the concrete classes can provide swap and compare methods. The itnerface Sortable helps with that. This is a very losely coupled approach.
+
+We then refactored the application to use Abstract classes (Making the interface needless) . In this fashion the collections themselves exposes sorting algorithm without duplicating code. However, this tightly couples the classes.
