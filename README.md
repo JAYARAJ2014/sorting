@@ -1,4 +1,4 @@
-### Plain type script application
+### Plain type script application to sort a collection (Nubmers | String | LinkedList)
 
 the type script code is persisted in /src folder
 
