@@ -1,11 +1,11 @@
-import { Sortable } from "./Sortable";
+import { Sorter } from "./Sorter";
 
 class Node {
     next: Node | null =null;
     constructor (public data:number){}
 }
 
-export class LinkedList  implements Sortable {
+export class LinkedList extends Sorter  {
     compare(leftIndex: number, rightIndex: number): boolean {
         if(!this.head) {
             throw new Error ('List is empty');
